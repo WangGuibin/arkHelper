@@ -14,6 +14,21 @@
 
 ## 必要配置
 
+去这里注册 https://www.volcengine.com 获取apikey和模型id即可
+
+```bash
+curl https://ark.cn-beijing.volces.com/api/v3/chat/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $ARK_API_KEY" \
+  -d '{
+    "model": "deepseek-r1-250120",
+    "messages": [
+      {"role": "system","content": "你是人工智能助手."},
+      {"role": "user","content": "常见的十字花科植物有哪些？"}
+    ]
+  }'
+```
+
 项目运行需要配置以下两个关键参数：
 
 ### API Key
