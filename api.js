@@ -4,7 +4,7 @@ const API = {
     get API_URL() {
         // 如果是GitHub Pages环境，使用公共API代理服务器
         if (window.location.hostname.includes('github.io')) {
-            return 'https://api-proxy.yourdomain.com/api/v3/chat/completions';
+            return 'https://ark.cn-beijing.volces.com/api/v3/chat/completions';
         }
         // 本地开发环境使用本地代理服务器
         return 'http://localhost:3000/api/v3/chat/completions';
